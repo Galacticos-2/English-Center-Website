@@ -1,0 +1,206 @@
+.my-info-page {
+    min-height: calc(100vh - 76px);
+    background: #f3f4f6;
+    padding: 34px;
+}
+
+.profile-card {
+    max-width: 1250px;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid #dfe3ea;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.profile-top {
+    padding: 38px;
+    display: flex;
+    gap: 42px;
+    align-items: center;
+}
+
+.profile-avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 999px;
+    object-fit: cover;
+}
+
+.profile-avatar-button {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: zoom-in;
+}
+
+.profile-avatar-button:disabled {
+    cursor: default;
+}
+
+.avatar-preview-backdrop {
+    position: fixed;
+    z-index: 210;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background: rgba(15, 23, 42, 0.78);
+}
+
+.avatar-preview-modal {
+    position: relative;
+    max-width: min(900px, 100%);
+    max-height: 100%;
+}
+
+.avatar-preview-modal img {
+    display: block;
+    max-width: 100%;
+    max-height: calc(100vh - 48px);
+    border-radius: 0;
+    object-fit: contain;
+}
+
+.avatar-preview-close {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+    width: 38px;
+    height: 38px;
+    border: 0;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    background: rgba(15, 23, 42, 0.72);
+    cursor: pointer;
+}
+
+.avatar-upload-area {
+    max-width: 560px;
+}
+
+    .avatar-upload-area p {
+        color: #6b7280;
+        line-height: 1.7;
+        margin-bottom: 18px;
+    }
+
+.dropzone-box {
+    border: 1px dashed #cbd5e1;
+    border-radius: 14px;
+    padding: 28px;
+    cursor: pointer;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.upload-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    background: #eef4ff;
+    color: #2563eb;
+    display: grid;
+    place-items: center;
+}
+
+.dropzone-box span {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.info-section {
+    border-top: 1px solid #e5e7eb;
+    padding: 28px 38px;
+}
+
+    .info-section h2 {
+        margin-bottom: 24px;
+        font-size: 26px;
+    }
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info-row {
+    border-top: 1px solid #e5e7eb;
+    padding: 20px 38px;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    align-items: center;
+}
+
+.info-section .info-row {
+    padding-left: 0;
+}
+
+.info-row span {
+    color: #666;
+}
+
+.info-row strong {
+    color: #111827;
+}
+
+.teacher-class-item {
+    padding: 16px 18px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.crop-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.65);
+    z-index: 200;
+    display: grid;
+    place-items: center;
+}
+
+.crop-modal {
+    width: 520px;
+    background: white;
+    border-radius: 18px;
+    padding: 24px;
+}
+
+.crop-area {
+    height: 360px;
+    position: relative;
+    margin: 18px 0;
+    background: #111827;
+}
+
+.crop-modal input {
+    width: 100%;
+}
+
+.crop-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+    .crop-actions button {
+        border: none;
+        padding: 12px 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+.primary-btn {
+    background: #2563eb;
+    color: white;
+}
