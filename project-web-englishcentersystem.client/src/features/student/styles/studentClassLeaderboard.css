@@ -1,0 +1,31 @@
+.class-leaderboard-page {
+    min-height: 100vh;
+    padding: 36px clamp(16px, 4vw, 56px) 64px;
+    background: #f7faff;
+    color: #1f2937;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.class-leaderboard-container { max-width: 1080px; margin: 0 auto; }
+.class-leaderboard-back { display: inline-flex; align-items: center; gap: 8px; border: 0; background: transparent; color: #1565c0; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
+.class-leaderboard-hero { display: flex; align-items: center; gap: 18px; margin: 18px 0 24px; padding: 28px; border-radius: 20px; color: #fff; background: linear-gradient(135deg, #172f50, #1565c0); box-shadow: 0 14px 28px rgba(21, 101, 192, .2); }
+.class-leaderboard-hero-icon { width: 60px; height: 60px; display: grid; flex: 0 0 auto; place-items: center; border-radius: 16px; color: #ffda71; background: rgba(255,255,255,.12); }
+.class-leaderboard-hero span { color: #b7d8ff; font-size: 12px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+.class-leaderboard-hero h1 { margin: 4px 0; color: #fff; font-family: "Plus Jakarta Sans", sans-serif; font-size: clamp(26px, 4vw, 34px); }
+.class-leaderboard-hero p { margin: 0; color: #dbeafe; font-size: 14px; }
+.class-leaderboard-table-card { overflow: hidden; border: 1px solid #e2e8f0; border-radius: 18px; background: #fff; box-shadow: 0 10px 24px rgba(15,23,42,.06); }
+.class-leaderboard-table-heading { display: flex; align-items: center; justify-content: space-between; padding: 20px 24px; border-bottom: 1px solid #e2e8f0; }
+.class-leaderboard-table-heading h2 { margin: 0; font-family: "Plus Jakarta Sans", sans-serif; font-size: 19px; }
+.class-leaderboard-table-heading span { color: #64748b; font-size: 13px; font-weight: 700; }
+.class-leaderboard-table-scroll { overflow-x: auto; }
+.class-leaderboard-table-card table { width: 100%; min-width: 690px; border-collapse: collapse; }
+.class-leaderboard-table-card th { padding: 14px 20px; color: #64748b; background: #f8fafc; font-size: 11px; letter-spacing: .06em; text-align: left; text-transform: uppercase; }
+.class-leaderboard-table-card td { padding: 14px 20px; border-top: 1px solid #eef2f7; color: #475569; font-size: 14px; }
+.class-leaderboard-table-card tr.is-current-student { background: #edf6ff; }
+.class-leaderboard-rank-badge { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 50%; color: #64748b; background: #f1f5f9; font-size: 13px; font-weight: 800; }
+.class-leaderboard-rank-badge.rank-1 { color: #a66b00; background: #fff3b8; }.class-leaderboard-rank-badge.rank-2 { color: #56606c; background: #e5e7eb; }.class-leaderboard-rank-badge.rank-3 { color: #8e5328; background: #f5ddca; }
+.class-leaderboard-student { display: flex; align-items: center; gap: 11px; min-width: 210px; color: #1f2937; }
+.class-leaderboard-avatar { width: 38px; height: 38px; display: grid; place-items: center; overflow: hidden; flex: 0 0 auto; border-radius: 50%; color: #0d47a1; background: #dbeafe; font-weight: 800; }.class-leaderboard-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.class-leaderboard-exp { color: #0d47a1; white-space: nowrap; }.class-leaderboard-title { display: inline-block; padding: 5px 10px; border-radius: 999px; color: #885700; background: #fff3c4; font-size: 12px; font-weight: 800; }
+.class-leaderboard-loading { display: flex; align-items: center; justify-content: center; gap: 10px; color: #1565c0; font-weight: 700; }.class-leaderboard-error { max-width: 450px; margin: 15vh auto; padding: 28px; text-align: center; border-radius: 18px; background: #fff; box-shadow: 0 10px 24px rgba(15,23,42,.08); }.class-leaderboard-error button { padding: 10px 16px; border: 0; border-radius: 10px; color: #fff; background: #1565c0; font-weight: 700; cursor: pointer; }
+@media (max-width: 640px) { .class-leaderboard-page { padding-top: 22px; }.class-leaderboard-hero { align-items: flex-start; padding: 22px; }.class-leaderboard-hero-icon { width: 48px; height: 48px; }.class-leaderboard-table-heading { padding: 17px; } }
