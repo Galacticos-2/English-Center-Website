@@ -1,0 +1,85 @@
+.online-classroom-page {
+    --oc-orange: #ff6b12;
+    --oc-orange-soft: #fff3ea;
+    --oc-ink: #12172b;
+    --oc-ink-soft: #545b70;
+    --oc-muted: #8a90a3;
+    --oc-border: #e7e9f1;
+    --oc-bg: #f4f5fa;
+    --oc-radius-lg: 18px;
+    --oc-shadow: 0 1px 2px rgba(17, 24, 39, .04);
+    flex: 1;
+    min-width: 0;
+    min-height: calc(100vh - 80px);
+    padding: 32px;
+    background: var(--oc-bg);
+    color: var(--oc-ink);
+    box-sizing: border-box;
+}
+
+.teacher-online-classroom { max-width: 1480px; margin: 0 auto; padding: 36px 40px 72px; }
+.online-classroom-breadcrumb { display: flex; align-items: center; gap: 8px; margin-bottom: 22px; color: var(--oc-muted); font-size: 13.5px; }
+.online-classroom-breadcrumb svg { color: #c3c7d4; }
+.online-classroom-breadcrumb strong { color: var(--oc-ink); font-weight: 700; }
+
+.online-classroom-heading { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 26px; padding: 26px 30px; border: 1px solid var(--oc-border); border-radius: var(--oc-radius-lg); background: radial-gradient(120% 160% at 100% 0%, rgba(255, 107, 18, .1), transparent 55%), #fff; box-shadow: var(--oc-shadow); }
+.online-classroom-title { display: flex; align-items: center; gap: 14px; }
+.online-classroom-title-icon, .online-classroom-video-icon { display: grid; place-items: center; flex-shrink: 0; color: var(--oc-orange); background: var(--oc-orange-soft); }
+.online-classroom-title-icon { width: 34px; height: 34px; border-radius: 13px; }
+.online-classroom-eyebrow { display: block; color: var(--oc-orange); font-size: 11px; font-weight: 800; letter-spacing: .09em; }
+.online-classroom-heading h1 { margin: 3px 0 0; color: var(--oc-ink); font-size: 30px; font-weight: 800; line-height: 1.2; letter-spacing: -.6px; }
+.online-classroom-heading p, .online-classroom-card p { margin: 0; color: var(--oc-ink-soft); }
+.online-classroom-heading p { margin-top: 6px; font-size: 14.5px; line-height: 1.5; }
+
+.online-classroom-primary, .online-classroom-join { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 10px; padding: 11px 16px; color: #fff; font: inherit; font-weight: 700; text-decoration: none; cursor: pointer; }
+.online-classroom-primary { min-height: 50px; flex-shrink: 0; padding: 0 24px; border-radius: 12px; background: linear-gradient(135deg, #ff8437, var(--oc-orange) 55%, #f2570a); box-shadow: 0 12px 24px rgba(255, 107, 18, .28); transition: transform .18s ease, box-shadow .18s ease, filter .18s ease; }
+.online-classroom-primary:hover:not(:disabled) { transform: translateY(-2px); filter: brightness(1.04); box-shadow: 0 16px 30px rgba(255, 107, 18, .34); }
+.online-classroom-primary:disabled { cursor: not-allowed; opacity: .6; }
+
+.online-classroom-content { min-height: 260px; padding: 26px; border: 1px solid var(--oc-border); border-radius: var(--oc-radius-lg); background: #fff; box-shadow: var(--oc-shadow); }
+.teacher-online-classroom .online-classroom-content { padding: 0; overflow: hidden; }
+.teacher-online-classroom .online-classroom-empty { margin: 26px; }
+.online-classroom-table .ant-table { background: transparent; }
+.online-classroom-table .ant-table-thead > tr > th { background: #f5f7fb; color: var(--oc-ink-soft); font-weight: 800; }
+.online-classroom-table .ant-table-tbody > tr > td { vertical-align: middle; }
+.online-classroom-table-title { min-width: 0; }
+.online-classroom-table-title strong { display: block; overflow: hidden; color: var(--oc-ink); font-size: 14px; text-overflow: ellipsis; white-space: nowrap; }
+.online-classroom-table-status { margin-inline-end: 0; border-radius: 999px; font-weight: 700; }
+.online-classroom-table-status.scheduled { border-color: #fed7aa; background: #fff3ea; color: #c2410c; }
+.online-classroom-table-status.live { border-color: #bbf7d0; background: #dcfce7; color: #15803d; }
+.online-classroom-table-status.ended { border-color: #fecaca; background: #fee2e2; color: #b91c1c; }
+.online-classroom-table-join { display: inline-flex; align-items: center; gap: 6px; color: #075ff5; font-weight: 700; text-decoration: none; }
+.online-classroom-table-action { display: inline-grid; width: 32px; height: 32px; padding: 0; border: 1px solid #c8dcff; border-radius: 8px; place-items: center; color: #075ff5; background: #fff; cursor: pointer; }
+.online-classroom-table-action.delete { border-color: #fecaca; color: #ef4444; }
+.online-classroom-table.ant-table-wrapper .ant-table-pagination.ant-pagination { margin: 16px 0; padding-right: 50px; }
+.online-classroom-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+.online-classroom-card { padding: 20px; border: 1px solid var(--oc-border); border-radius: 14px; background: linear-gradient(145deg, #fff, #fafbff); transition: transform .18s ease, box-shadow .18s ease; }
+.online-classroom-card:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(18, 23, 43, .08); }
+.online-classroom-card-top, .online-classroom-actions, .online-classroom-time { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.online-classroom-video-icon { width: 42px; height: 42px; border-radius: 12px; }
+.online-classroom-status { border-radius: 20px; padding: 5px 9px; font-size: 12px; font-weight: 700; }
+.online-classroom-status.scheduled { background: #fff3ea; color: #c2410c; }
+.online-classroom-status.live { background: #dcfce7; color: #15803d; }
+.online-classroom-status.ended { background: #fee2e2; color: #b91c1c; }
+.online-classroom-card h2 { margin: 18px 0 5px; color: var(--oc-ink); font-size: 19px; }
+.online-classroom-class { font-weight: 700; }
+.online-classroom-teacher { margin-top: 6px !important; font-size: 14px; }
+.online-classroom-time { justify-content: flex-start; margin: 20px 0; color: #545b70; font-size: 14px; }
+.online-classroom-actions { justify-content: flex-start; }
+.online-classroom-join { border: 1px solid #b8d2ff; background: #fff; color: #075ff5; }
+.online-classroom-actions button { display: grid; place-items: center; width: 40px; height: 40px; border: 1px solid #c8dcff; border-radius: 10px; color: #075ff5; background: #fff; cursor: pointer; }
+.online-classroom-actions button.danger { border-color: #fecaca; color: #ef4444; }
+.online-classroom-empty { display: grid; place-items: center; min-height: 260px; padding: 28px; color: var(--oc-muted); border: 1px dashed #cbd5e1; border-radius: 14px; text-align: center; }
+.online-classroom-empty h2 { margin: 12px 0 6px; color: var(--oc-ink); }
+.online-classroom-error { margin-bottom: 20px; padding: 12px 15px; color: #b91c1c; border: 1px solid #fecaca; border-radius: 10px; background: #fff1f2; }
+
+.online-classroom-modal-backdrop { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 20px; background: rgba(15, 23, 42, .5); }
+.online-classroom-modal { position: relative; display: grid; gap: 15px; width: min(560px, 100%); padding: 28px; border-radius: 16px; background: #fff; }
+.online-classroom-modal h2 { margin: 0 0 4px; color: var(--oc-ink); }
+.online-classroom-modal label { display: grid; gap: 7px; color: #334155; font-size: 14px; font-weight: 700; }
+.online-classroom-modal input, .online-classroom-modal select { width: 100%; box-sizing: border-box; padding: 10px 11px; border: 1px solid #cbd5e1; border-radius: 8px; font: inherit; }
+.online-classroom-datetime-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.online-classroom-close { position: absolute; top: 14px; right: 14px; border: 0; background: transparent; color: #64748b; cursor: pointer; }
+
+@media (max-width: 780px) { .teacher-online-classroom, .online-classroom-page { padding: 24px 20px 48px; }.online-classroom-heading { align-items: flex-start; flex-direction: column; padding: 22px; }.online-classroom-primary { width: 100%; }.online-classroom-content { padding: 18px; } }
+@media (max-width: 520px) { .online-classroom-datetime-row { grid-template-columns: 1fr; }.online-classroom-title { align-items: flex-start; }.online-classroom-heading h1 { font-size: 26px; } }
