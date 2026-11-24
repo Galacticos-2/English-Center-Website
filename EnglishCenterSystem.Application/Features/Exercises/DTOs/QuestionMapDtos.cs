@@ -1,0 +1,6 @@
+using EnglishCenterSystem.Domain.Enums;
+namespace EnglishCenterSystem.Application.Features.Exercises.DTOs;
+public class CreateQuestionMapDto { public string Title { get; set; } = null!; public string? Description { get; set; } public CourseType CourseType { get; set; } }
+public class CreateQuestionGroupDto { public string Title { get; set; } = null!; public string? Description { get; set; } public string Icon { get; set; } = "book"; public string Color { get; set; } = "#2563eb"; public int QuestionCount { get; set; } public List<int> QuestionIds { get; set; } = new(); public List<int> ClassRoomIds { get; set; } = new(); }
+public class QuestionMapDto { public int QuestionMapId { get; set; } public string Title { get; set; } = null!; public string? Description { get; set; } public CourseType CourseType { get; set; } public List<QuestionGroupDto> Groups { get; set; } = new(); }
+public class QuestionGroupDto { public int QuestionGroupId { get; set; } public string Title { get; set; } = null!; public string? Description { get; set; } public string Icon { get; set; } = null!; public string Color { get; set; } = null!; public int OrderIndex { get; set; } public int QuestionCount { get; set; } public bool IsCompleted { get; set; } public bool IsUnlocked { get; set; } public List<string> ClassNames { get; set; } = new(); }
