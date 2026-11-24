@@ -1,0 +1,227 @@
+.question-bank-page {
+    width: 100%;
+}
+
+.question-bank-actions {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.question-bank-filters {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+    .question-bank-filters select {
+        width: 100%;
+        padding: 13px 16px;
+        border-radius: 12px;
+        border: 1px solid #d1d5db;
+        background: white;
+    }
+
+        .question-bank-filters select:last-child {
+            grid-column: 1 / 2;
+        }
+
+.question-category-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.question-category-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+    .question-category-card h3 {
+        font-size: 18px;
+        color: #111827;
+        margin-bottom: 6px;
+    }
+
+    .question-category-card p {
+        color: #6b7280;
+        line-height: 1.5;
+    }
+
+.question-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.question-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 22px;
+}
+
+.question-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.question-card h3 {
+    font-size: 20px;
+    color: #111827;
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+
+.question-badge,
+.question-type-badge {
+    display: inline-flex;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.question-badge {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.question-type-badge {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.question-card-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.question-option-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.question-option {
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+    padding: 12px 14px;
+    border-radius: 12px;
+    color: #374151;
+}
+
+    .question-option.correct {
+        background: #dcfce7;
+        border-color: #22c55e;
+        color: #15803d;
+        font-weight: 700;
+    }
+
+.question-explanation {
+    margin-top: 14px;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.question-modal {
+    width: 640px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.lesson-form textarea {
+    padding: 13px;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    min-height: 100px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.question-form-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+    .question-form-options h3 {
+        font-size: 18px;
+        color: #111827;
+    }
+
+.question-form-option {
+    display: grid;
+    grid-template-columns: 24px 1fr 42px;
+    gap: 10px;
+    align-items: center;
+}
+
+    .question-form-option input[type="radio"] {
+        width: 18px;
+        height: 18px;
+    }
+
+.option-remove-btn {
+    height: 42px;
+    border: none;
+    background: #fee2e2;
+    color: #dc2626;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .question-bank-actions,
+    .question-bank-filters {
+        flex-direction: column;
+    }
+
+    .question-modal {
+        width: 92%;
+    }
+
+    .question-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
+.teacher-explanation-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px;
+    border: 1px solid #d8deea;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.teacher-explanation-option > span {
+    display: grid;
+    gap: 4px;
+}
+
+.teacher-explanation-option input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 2px 0 0;
+    flex: 0 0 auto;
+}
+
+.teacher-explanation-option small {
+    color: #64748b;
+    font-weight: 400;
+}
